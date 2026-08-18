@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pricing — EVO | Simple Plans for Every Portfolio</title>
-  <meta name="description" content="Simple EVO pricing plans that scale from entry-level repairs management to predictable, all-inclusive repair packages. Bronze, Silver and Gold tiers." />
+  <title>Products — EVO | Living App, Trades App &amp; Dashboard</title>
+  <meta name="description" content="Living App for residents, Trades App for tradespeople, and Dashboard for property managers — the three human sides of the EVO platform." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -18,9 +18,9 @@
       <nav class="main-nav" aria-label="Primary">
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Products</a></li>
+          <li><a href="products.html" class="active">Products</a></li>
           <li><a href="sectors.html">Sectors</a></li>
-          <li><a href="pricing.html" class="active">Pricing</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
         </ul>
         <div class="nav-cta">
           <a href="mailto:hello@evo-pm.com" class="btn btn-primary btn-sm">Get in touch</a>
@@ -35,112 +35,72 @@
   <main>
 
     <!-- HERO -->
-    <section class="hero" style="padding-bottom: 40px;">
+    <section class="hero" style="padding-bottom: 60px;">
       <div class="container">
-        <div class="section-header center reveal">
-          <p class="eyebrow">Pricing plans</p>
-          <h1 style="font-size: clamp(2.2rem, 4.4vw, 3.6rem);">Straightforward pricing, per property.</h1>
-          <p class="hero-lede center" style="max-width: 62ch;">Simple pricing plans that make it easy to scale up — from entry-level repairs management to predictable, all-inclusive repair packages. A full repairs and maintenance managed solution for private landlords, managing agents, PRS providers, Build-to-Rent developments, housing associations and local authorities.</p>
+        <div class="section-header reveal">
+          <p class="eyebrow">The platform</p>
+          <h1 style="font-size: clamp(2.2rem, 4.4vw, 3.6rem);">Property management, made human.</h1>
+          <p class="hero-lede" style="max-width: 62ch;">A simple, coherent, end-to-end solution that connects residents, trades, landlords and property managers to support the day-to-day management and maintenance of residential property portfolios. It's the smartest, most intuitive tenant and trades app on the market — because behind every ticket is a person, not just a task.</p>
         </div>
       </div>
     </section>
 
-    <!-- PRICING TOGGLE + GRID -->
-    <section class="section" style="padding-top: 0;">
+    <!-- LIVING APP -->
+    <section class="section" id="living">
       <div class="container">
-        <div class="center reveal">
-          <div class="pricing-toggle" role="group" aria-label="Billing period">
-            <button type="button" class="active" data-period="monthly">Monthly</button>
-            <button type="button" data-period="annual">Annual <span class="save-tag">Save ~10%</span></button>
+        <div class="product-detail reveal">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1000&q=80" alt="A hand holding house keys at a front door" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%271200%27%20height%3D%27800%27%3E%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23FF6600%27%2F%3E%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%238A9A7E%27%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%271200%27%20height%3D%27800%27%20fill%3D%27url%28%23g%29%27%2F%3E%3C%2Fsvg%3E';this.style.objectFit='cover';" />
+          </div>
+          <div class="product-copy">
+            <span class="tag" style="display:inline-block; font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:var(--terracotta-dark); background:var(--terracotta-tint); padding:4px 10px; border-radius:100px; margin-bottom:12px;">For residents</span>
+            <h2>Living App</h2>
+            <p class="lede">More than a repair reporting tool — Living App is a resident's digital logbook for their home. It's secure storage for tenancy documents, easy-to-find user guides, and property-specific FAQs that help people help themselves, day or night.</p>
+            <ul class="feature-tags">
+              <li>Report problems</li>
+              <li>24/7 emergency response</li>
+              <li>In-app messaging</li>
+              <li>Alerts &amp; notifications</li>
+              <li>Easy appointment booking</li>
+            </ul>
           </div>
         </div>
 
-        <div class="pricing-grid reveal">
-
-          <!-- BRONZE -->
-          <div class="price-card">
-            <p class="tier-name">Bronze</p>
-            <p class="tier-term">Minimum 30-day term</p>
-            <div class="price">
-              <span class="amount" data-monthly="£9.99" data-annual="£8.99">£9.99</span>
-              <span class="period">/ property / month</span>
-            </div>
-            <p class="price-annual-note" style="display:none;">Billed annually</p>
-            <ul class="plan-features">
-              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Smart digital dashboard</li>
-              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Residents Living App</li>
-              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Service &amp; compliance log</li>
-              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> 10-day SLA</li>
-            </ul>
-            <a href="mailto:hello@evo-pm.com" class="btn btn-outline">Get in touch</a>
+        <!-- TRADES APP -->
+        <div class="product-detail reverse reveal" id="trades">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1000&q=80" alt="A tradesperson's hands using a tool during a repair" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%271200%27%20height%3D%27800%27%3E%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23FF6600%27%2F%3E%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%238A9A7E%27%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%271200%27%20height%3D%27800%27%20fill%3D%27url%28%23g%29%27%2F%3E%3C%2Fsvg%3E';this.style.objectFit='cover';" />
           </div>
-
-          <!-- SILVER -->
-          <div class="price-card featured">
-            <span class="featured-flag">Most popular</span>
-            <p class="tier-name">Silver</p>
-            <p class="tier-term">Minimum 12-month term</p>
-            <div class="price">
-              <span class="amount" data-monthly="£19.99" data-annual="£17.99">£19.99</span>
-              <span class="period">/ property / month</span>
-            </div>
-            <p class="price-annual-note" style="display:none;">Billed annually</p>
-            <ul class="plan-features">
-              <li class="included-from">Everything in Bronze, plus:</li>
-              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Priority support</li>
-              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> 5-day SLA</li>
-              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Smart key exchange</li>
-              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Remote video triage</li>
-              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> 24/7 home emergency response</li>
+          <div class="product-copy">
+            <span class="tag" style="display:inline-block; font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:var(--terracotta-dark); background:var(--terracotta-tint); padding:4px 10px; border-radius:100px; margin-bottom:12px;">For tradespeople</span>
+            <h2>Trades App</h2>
+            <p class="lede">A simple, effective way for tradespeople to view and accept jobs — and to keep everyone in the loop. Every step of progress on a job is communicated back to both the resident and the landlord, automatically.</p>
+            <ul class="feature-tags">
+              <li>On-demand job assignment</li>
+              <li>Smart skill &amp; location scheduling</li>
+              <li>Job updates with photos &amp; video</li>
+              <li>Alerts &amp; notifications</li>
+              <li>In-app billing &amp; payments</li>
             </ul>
-            <a href="mailto:hello@evo-pm.com" class="btn btn-primary">Get in touch</a>
           </div>
-
-          <!-- GOLD -->
-          <div class="price-card">
-            <p class="tier-name">Gold</p>
-            <p class="tier-term">Minimum 24-month term</p>
-            <div class="price">
-              <span class="amount" data-monthly="£27.99" data-annual="£24.99">£27.99</span>
-              <span class="period">/ property / month</span>
-            </div>
-            <p class="price-annual-note" style="display:none;">Billed annually</p>
-            <ul class="plan-features">
-              <li class="included-from">Everything in Silver, plus:</li>
-              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Condition report / survey</li>
-              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Dedicated property manager</li>
-              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> 3-day SLA</li>
-            </ul>
-            <a href="mailto:hello@evo-pm.com" class="btn btn-outline">Get in touch</a>
-          </div>
-
         </div>
 
-        <p class="pricing-footnote center">All prices shown per property, per month, and exclude VAT. Annual pricing is billed yearly in advance. Minimum term lengths apply as shown per tier.</p>
-
-        <!-- ADD-ONS -->
-        <div class="addons reveal">
-          <div class="section-header" style="margin-bottom: 0;">
-            <p class="eyebrow">Optional add-ons</p>
-            <h2 style="font-size: 1.9rem;">A little extra cover, when you need it</h2>
-            <p>Available alongside Silver and Gold tiers, plus a compliance pack available on every tier.</p>
+        <!-- DASHBOARD -->
+        <div class="product-detail reveal" id="dashboard">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1000&q=80" alt="A bright, calm home interior representing a well-managed property" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%271200%27%20height%3D%27800%27%3E%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23FF6600%27%2F%3E%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%238A9A7E%27%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%271200%27%20height%3D%27800%27%20fill%3D%27url%28%23g%29%27%2F%3E%3C%2Fsvg%3E';this.style.objectFit='cover';" />
           </div>
-          <div class="addons-grid">
-            <div class="addon-card">
-              <h4>Heating Protect</h4>
-              <p>Cover for heating system breakdowns, so residents are never left in the cold.</p>
-              <p class="addon-price">from £33/mo</p>
-            </div>
-            <div class="addon-card">
-              <h4>Home Protect</h4>
-              <p>Broader cover for the everyday things that go wrong in a lived-in home.</p>
-              <p class="addon-price">from £50/mo</p>
-            </div>
-            <div class="addon-card">
-              <h4>Landlord Compliance</h4>
-              <p>Keep on top of certificates and legal obligations, automatically. Available on all tiers.</p>
-              <p class="addon-price">£20/mo</p>
-            </div>
+          <div class="product-copy">
+            <span class="tag" style="display:inline-block; font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:var(--terracotta-dark); background:var(--terracotta-tint); padding:4px 10px; border-radius:100px; margin-bottom:12px;">For property managers</span>
+            <h2>Dashboard</h2>
+            <p class="lede">Our digital dashboard empowers landlords and property managers to deliver an exceptional customer experience. Detailed service history is easy to find, and real-time job tracking gives you the insight to drive efficiencies and improve resident satisfaction.</p>
+            <ul class="feature-tags">
+              <li>Secure online digital dashboard</li>
+              <li>People, places, jobs, events &amp; notes</li>
+              <li>Experienced support team</li>
+              <li>Knowledge base &amp; property logbooks</li>
+              <li>Real-time calendar</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -150,8 +110,8 @@
     <section class="section">
       <div class="container">
         <div class="cta-band reveal">
-          <h2>Not sure which plan fits?</h2>
-          <p>Tell us about your portfolio and we'll help you find the right tier — no pressure, just a straight answer.</p>
+          <h2>Discover the benefits of EVO today.</h2>
+          <p>Our team is happy to give you a free, no-pressure demonstration of the apps and dashboard — and show you exactly what it could mean for you and your residents.</p>
           <div class="cta-actions">
             <a href="mailto:hello@evo-pm.com" class="btn btn-primary">Get in touch</a>
           </div>
