@@ -11,9 +11,9 @@
   --ink-faint: #8a7d6a;
   --line: rgba(42, 36, 25, 0.14);
   --line-soft: rgba(42, 36, 25, 0.08);
-  --terracotta: #bf5b3a;
-  --terracotta-dark: #9c472b;
-  --terracotta-tint: #f3ddd0;
+  --terracotta: #ff6600;      /* brand orange */
+  --terracotta-dark: #cc5200;
+  --terracotta-tint: #ffe8d6;
   --sage: #6f7d5b;
   --sage-dark: #545f42;
   --sage-tint: #dfe4d2;
@@ -109,7 +109,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .btn-primary {
   background: var(--terracotta);
   color: var(--paper);
-  box-shadow: 0 10px 24px -12px rgba(191, 91, 58, 0.65);
+  box-shadow: 0 10px 24px -12px rgba(255, 102, 0, 0.65);
 }
 .btn-primary:hover { background: var(--terracotta-dark); transform: translateY(-2px); }
 
@@ -349,7 +349,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   background-image: radial-gradient(circle at 20% 20%, rgba(255,255,255,0.25), transparent 55%);
 }
 .texture-sage { background: linear-gradient(150deg, var(--sage) 0%, #4d5940 100%); }
-.texture-terracotta { background: linear-gradient(150deg, var(--terracotta) 0%, #7c3d24 100%); }
+.texture-terracotta { background: linear-gradient(150deg, var(--terracotta) 0%, #992e00 100%); }
 .texture-cream { background: linear-gradient(150deg, var(--cream-deep) 0%, #d9c9a8 100%); }
 
 /* ---------------------------------- Intro / lead sections ---------------------------------- */
@@ -564,7 +564,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 80% 0%, rgba(191, 91, 58, 0.35), transparent 60%);
+  background: radial-gradient(circle at 80% 0%, rgba(255, 102, 0, 0.35), transparent 60%);
 }
 .cta-band > * { position: relative; }
 .cta-band h2 { color: var(--paper); font-size: clamp(1.9rem, 3.6vw, 2.8rem); max-width: 20ch; margin: 0 auto 0.5em; }
